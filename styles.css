@@ -10,6 +10,81 @@ div {
 
 form {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 30%;
+  background-color: white;
+  margin: 3vh 0 5vh 0;
+  padding: 5% 10%;
+  box-shadow: 5px 5px 5px rgb(215, 215, 215);
+}
+
+form label {
+  margin: 0 0 3%;
+  font-size: 1.7rem;
+}
+
+div > label {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+form input {
+  margin-bottom: 10%;
+  height: 2rem;
+  font-size: 1rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: solid 2px rgb(0, 128, 255);
+  box-shadow: 5px 5px 5px rgb(215, 215, 215);;
+}
+
+input:invalid {
+  outline: solid 2px rgb(210, 25, 25);
+}
+
+.form.content {
+  flex-direction: row;
+  
+}
+
+.form.left {
+  margin-right: 10%;
+  width: 30%;
+}
+
+.form.right {
+  width: 30%;
+}
+
+button {
+  width: 25%;
+  height: 6%;
+  margin: 0 10%;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #596D48;
+  font-size: 1rem;
+  box-shadow: 5px 5px 5px rgb(215, 215, 215);
+}
+
+button:hover {
+  background-color: #6d7e5d;
+}
+
+button:active {
+  background-color: #596D48;
+  box-shadow: 5px 5px 5px #2a3123 inset;
+}
+
+.content.right > p {
+  margin: 3% 34% 0 10%;
+  font-weight: 600;
 }
 
 .content.left {
@@ -17,15 +92,18 @@ form {
   width: 40vw;
   height: 100vh;
   background-image: url(Fern.jpg);
-  background-size: auto 100vh;
+  background-size: 100% 100%;
   color: white;
 
 }
 
 .content.right {
-  width: 65vw;
-  padding-left: 5vw;
-  padding-right: 10vw;
+  justify-content: center;
+  width: 60vw;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  background-color: rgb(248, 252, 251);
 }
 
 .odin {
@@ -50,7 +128,7 @@ span {
 .footer {
   position: absolute;
   top: 95%;
-  left: 30%;
+  align-self: center;
 }
 
 a {
@@ -59,6 +137,6 @@ a {
 }
 
 a.green {
-  color: green;
+  color: #596D48;
   text-decoration: none;
 }
